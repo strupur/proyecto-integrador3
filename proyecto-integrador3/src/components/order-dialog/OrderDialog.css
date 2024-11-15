@@ -1,0 +1,139 @@
+.modal-overlay {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.716);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    animation: showIn .3s ease-in-out forwards;
+    z-index: 3;
+
+
+    .modal-content {
+        border: solid 3px rgb(12, 162, 255);
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        width: calc(100% - 2rem);
+        max-width: 600px;
+        height: auto;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        animation: fadeIn .3s ease-in-out forwards;
+        transform: translateY(50px);
+
+        .modal-header {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+
+        .modal-body {
+            margin-bottom: 1rem;
+
+            .order-total {
+                font-weight: 700;
+                text-align: right;
+                font-family: 1.25rem;
+                padding: .5rem 1rem;
+                border-top: 1px solid crimson;
+            }
+
+            .order-list {
+                list-style: none;
+                padding-left: 0;
+
+                .order-item {
+                    padding: .25rem 1rem;
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #DDDDDDAA;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            display: flex;
+            gap: .25rem;
+            color: white;
+            background-color: crimson;
+            outline: none;
+            border: none;
+            padding: .5rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            width: 131px;
+            margin-right: 10px;
+            
+
+            &.btn-cerrar {
+                background-color: rgb(176, 4, 1);
+                width: 59px;
+            }
+
+        }
+    }
+}
+
+@keyframes showIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====== SECCION Order en MOVIL====== */
+
+@media screen and (width <=625px) {
+
+    .modal-content {
+        width: calc(100% - 3rem); 
+        max-width: none; 
+        padding: 1rem; 
+        transform: translateY(0); 
+        border-radius: 0.5rem; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+
+        .order-total {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            margin-right: 35px;
+            
+        }
+        
+        .btn {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0rem;
+            color: white;
+            background-color: crimson;
+            outline: none;
+            border: none;
+            padding: 0rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            width: 31px;
+            margin-right: 40px;
+            font-size: 15px;
+        }
+        
+    }
+}

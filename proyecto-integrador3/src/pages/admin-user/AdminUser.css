@@ -1,0 +1,82 @@
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #3998ff;
+    border-radius: 17px;
+    
+
+    input, textarea, select {
+        padding: .5rem 1rem;
+        border: 1px solid rgba(220, 20, 60, 0.15);
+        outline: none;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 4px;
+        background-color: #fdfeff;
+        transition: border-color .3s;
+        color: #999;
+
+        &:focus {
+            border-color: crimson;
+        }  
+    }
+
+    .input-group-adminUser {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        color: rgb(28, 22, 208);
+        font-weight: 700;
+    }
+    .input-error {
+        color: red;
+        font-size: .625rem;
+    }
+    .btn {
+        background-color: crimson;
+        color: white;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+        transition: background-color .3s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        &.btn-success {
+            background-color: green;
+
+            &:hover {
+                background-color: rgb(0, 91, 0);
+            }
+        }
+        &:disabled {
+            background-color: #020202;
+            color: #666;
+            pointer-events: none;
+        }
+        &:hover {
+            background-color: darkred;
+        }
+    }
+}
+
+.admin-container-adminUser {
+    margin-top: 100px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+
+    .form-container {
+        flex: 0 0 360px;
+    }
+
+    @media screen and (width < 900px) {
+        flex-direction: column;
+        .form-container {
+            order: 1;
+        }
+    }
+}

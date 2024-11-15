@@ -1,0 +1,50 @@
+.contenedore-service-features {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background: #b0afb0;
+}
+
+.div-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    flex: 1;
+}
+
+.feature-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.div-feature-parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.parrafo-feature {
+    font-family: sans-serif;
+    color: #4b4a4a;
+}
+
+/* ====== SECCION SERVICE FEATURE EN MOVIL====== */
+
+@media screen and (width <=500px) {
+
+    .contenedore-service-features {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        background: #b0afb0;
+        height: auto;
+    }
+
+    .div-feature {
+        margin: 40px;
+    }
+}

@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Rubik";
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/assets/image/musica-tema-notas-blancas-sobre-fondo-negro-t108hw.jpg);
+    background-repeat: repeat-x;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /* ====== SECTION ====== */
+  
+  .main-carousel {
+    margin-top: 102px;
+    height: 490px;
+  
+    .carousel-caption {
+        padding: 2rem;
+    }
+  
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+  }
+  
+  /* ====== MAIN ====== */
+  
+  .main-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    
+  }
+  
+  .title-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background-image: linear-gradient(180deg, rgb(0, 0, 255), rgb(0, 235, 243));
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+  
+  .subtitle-main {
+    margin-bottom: 1rem;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: #777;
+    font-weight: 100;
+  }
+  
+  h2 {
+    font-family: "Rubik";
+    padding: 20px 0px 7px 0px;
+  }
+  
+  h3 {
+    font: sans-serif;
+    font-size: 20px
+  }
+  
+  .contenedor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-image: linear-gradient(to bottom, rgb(183, 183, 182), rgb(253, 253, 254));
+    padding: 16px;
+    border-radius: 8px;
+    width: calc((100vw/3) - 3rem);
+    border: 1px solid transparent;
+    transition: margin 0.3s, border 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+  
+    border: 2px solid #0761e0;
+    display: flex;
+    flex-direction: column;
+    background: #c1bec1;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #2b09b1;
+  }
+  
+  .div-imagen-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0px;
+  }
+  
+  .img-card {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .div-title-card {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    h3 {
+        text-align: center;
+        margin-top: 30px;
+        font-family: sans-serif;
+        color: rgb(30, 111, 217);
+        font-size: 30px;
+    }
+  }
+  
+  .div-descripcion-producto {
+    width: 100%;
+    padding-left: 0px;
+  }
+  
+  .descripcion-producto {
+    text-align: center;
+    font-family: sans-serif;
+    color: #777;
+  }
+  
+  .fecha-precio {
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fecha {
+    color: #4b4a4a;
+    font-size: 14px;
+  }
+  
+  .precio {
+    color: rgb(225, 1, 1);
+    font-size: 20px;
+  }
+  
+  .calificacion {
+    margin-left: 30px;
+    font-size: 14px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nombrado {
+    color: #4b4a4a;
+  }
+  
+  .stars {
+    color: #e8c500;
+  }
+  
+  .div-button-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .button-card {
+    background-color: rgb(57, 75, 241);
+    text-align: center;
+    padding: 0px 10px 0px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .button-card:hover {
+    background-color: rgb(255, 254, 254);
+    color: blueviolet;
+    font-weight: 600;
+  }
+  
+  .a-button-card {
+    font-family: "Rubik";
+    color: rgb(255, 254, 254);
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 0px 0px 13px;
+  }
+  
+  .a-button-card:hover {
+    color: rgb(57, 75, 241);
+  }
+  
+  /* ====== SECCION SERVICE FEATURE ====== */
+  
+  .contenedore-service-features {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background: #b0afb0;
+  }
+  
+  .div-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    flex: 1;
+  }
+  
+  .feature-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+  
+  .div-feature-parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  
+  .parrafo-feature {
+    font-family: sans-serif;
+    color: #4b4a4a;
+  }
+  
+  /* ?================ SECCION EN MOVIL ================ */
+  
+  /* ====== SECCION EN MOVIL ====== */
+  
+  @media screen and (width <=500px) {
+    .main-carousel {
+        margin-top: 72px;
+        height: 400px;
+        background-color: crimson;
+  
+        .carousel-caption {
+            background-color: #333333AA;
+            padding: 2rem;
+        }
+  
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+  
+  }
+  
+  /* ====== SECCION CARD EN MOVIL ====== */
+  
+  @media screen and (width <=970px) {
+    .card {
+        width: calc(50% - 3rem);
+        min-width: calc(50% - 3rem);
+    }
+  }
+  
+  @media screen and (width <=750px) {
+    .card {
+        width: 100%;
+        min-width: 100%;
+    }
+  
+    .contenedor-cards {
+        padding: 20px 20px 0px;
+    }
+  }
+  
+  /* ====== SECCION SERVICE FEATURE EN MOVIL====== */
+  
+  @media screen and (width <=500px) {
+  
+    .contenedore-service-features {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        background: #b0afb0;
+        height: auto;
+    }
+  
+    .div-feature {
+        margin: 40px;
+    }
+  }
+
+ 
+

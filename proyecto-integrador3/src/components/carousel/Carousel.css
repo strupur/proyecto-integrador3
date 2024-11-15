@@ -1,0 +1,21 @@
+.main-carousel {
+    margin-top: 102px;
+    height: 490px;
+
+    .carousel-caption {
+        padding: 2rem;
+    }
+
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+/* ====== SECCION HEADER EN MOVIL ====== */
+
+@media (max-width: 790px) {
+    .main-carousel {
+        margin-top: 90px;
+    }
+}

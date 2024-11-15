@@ -1,0 +1,13 @@
+.section-contenedor {
+    margin-top: 100px;
+    height: 360px;
+    background-color: #666;
+    overflow-x: hidden;
+
+}
+
+.contenedor-home {
+    overflow-x: hidden;
+   
+}
+

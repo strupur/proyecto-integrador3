@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik";
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/pages/assets/image/musica-tema-notas-blancas-sobre-fondo-negro-t108hw.jpg);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* ====== SECTION FORMULARIO ======*/
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: solid;
+}
+
+.div-titulo-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 116px 0px 25px 0px;
+    height: auto;
+}
+
+.titulo-h1 {
+    font-size: 60px;
+    font-family: "Rubik";
+    color: transparent;
+    background-image: linear-gradient(180deg, rgb(0, 0, 255), rgb(0, 235, 243));
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(2, 120, 255, 0.734);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    height: auto;
+    
+}
+
+.input {
+    color: rgb(10, 61, 115);
+    font-size: 16px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-casilla {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.input-casilla {
+    border-radius: 7px;
+    border: 1px solid;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 359px;
+    height: 40px;
+    overflow: hidden;
+    resize: none;
+}
+
+.obs {
+    width: 359px;
+    height: 150px;
+}
+
+.boton-registro {
+    margin: 22px 0px 10px 0px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 1rem;
+    font-weight: 600;
+    background-color: rgb(57, 75, 241);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+
+}
+
+.boton-registro:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(57, 75, 241);
+    font-weight: 600;
+}
+
+/* ======== SECCION MAPA ======== */
+
+.container-mapa {
+    display: flexbox;
+    width: 100%;
+    height: 100% ; 
+    
+}
+
+.app-map {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ?================ SECCION EN MOVIL ================ */
+
+/* ====== SECCION FORM EN MOVIL ====== */
+
+@media screen and (width <=500px) {
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    .div-titulo-h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 150px 0px 25px 0px;
+        height: auto;
+    }
+
+    .titulo-h1 {
+        font-size: 60px;
+        font-family: "Rubik";
+        margin-top: 100px;
+    }
+
+    .contenedor-form {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:  rgba(2, 120, 255, 0.734);
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+        padding: 20px 10px 0px 10px;
+        height: auto;
+    }
+
+    .input {
+        color: rgb(10, 61, 115);
+        font-size: 16px;
+        margin: 25px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-casilla {
+        margin-bottom: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    .input-casilla {
+        border-radius: 7px;
+        border: 1px solid;
+        color: #47777d;
+        background-color: rgb(255, 255, 255);
+
+        width: 359px;
+        height: 40px;
+        overflow: hidden;
+        resize: none;
+    }
+
+    .obs {
+        width: 359px;
+        height: 150px;
+    }
+
+    .boton-registro {
+        margin: 22px 0px 10px 0px;
+        padding: 5px 15px 5px 15px;
+        border-radius: 1rem;
+        font-weight: 600;
+        background-color: rgb(57, 75, 241);
+        color: rgb(255, 255, 255);
+    }
+
+    /* ======== SECCION MAPA EN MOVIL ======== */
+
+    .container-mapa {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .app-map {
+        width: 100%;
+        object-fit: cover;
+        
+    }
+}

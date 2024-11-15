@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* ====== MAIN ====== */
+
+.contenedor-main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 60px;
+}
+
+.div-titulo-h1 {
+    margin-top: 115px;
+}
+
+.titulo-h1-l {
+    color: transparent;
+    background-image: linear-gradient(180deg, rgb(0, 0, 255), rgb(0, 235, 243));
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.div-parrafo {
+    margin: 12px 0px;
+}
+
+.parrafo {
+    font-size: 20px;
+    padding: 0px 25px 0px 25px;
+    color: #3f3e3e;
+    font-weight: 400;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.div-presentacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #3180ff;
+    width: 70%;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.div-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imagen-presentacion {
+    padding: 25px 25px 25px 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15PX;
+}
+
+.div-presentacion-infor {
+    border-radius: 15px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 25PX;
+}
+
+.item {
+    text-decoration: none;
+    font-size: 20px;
+    color: #3f3e3e;
+    font-weight: 400;
+    font-family: fantasy;
+}
+
+.info-alumno {
+    margin: 15px;
+    padding: 0px 15px 15px 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #3f3e3e;
+    font-weight: 400;
+    font-family: fantasy;
+}
+
+/* ?================ SECCION EN MOVIL ================ */
+
+/* ====== MAIN EN MOVIL====== */
+
+@media screen and (width <=500px) {
+
+    .contenedor-main {
+
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 30px;
+
+    }
+
+    .div-titulo-h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .titulo-h1-l {
+        align-items: center;
+        color: transparent;
+        background-image: linear-gradient(180deg, rgb(0, 0, 255), rgb(183, 227, 230));
+        background-size: 100%;
+        background-repeat: repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+    }
+
+    .div-parrafo {
+        margin: 12px 0px;
+    }
+
+    .parrafo {
+        font-size: 20px;
+        padding: 0px 25px 0px 25px;
+        font-weight: 400;
+        font-family: fantasy;
+        text-align: center;
+    }
+
+    .div-presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px #2b09b1;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .div-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0;
+        height: 500px;
+    }
+
+    .imagen-presentacion {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        padding: 0;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .div-presentacion-infor {
+
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .list {
+        padding-right: 15px;
+        list-style: none;
+        text-align: center;
+        margin-top: 15px;
+
+    }
+
+    .item {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: fantasy;
+    }
+
+    .info-alumno {
+        margin: 15px;
+        padding: 0px 15px 15px 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: fantasy;
+    }
+
+}

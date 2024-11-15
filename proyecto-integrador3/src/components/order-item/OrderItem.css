@@ -1,0 +1,133 @@
+.order-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(85, 20, 20, 0.3);
+    }
+
+    .item-imagen img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .item-info {
+        font-weight: 500;
+        flex: 1;
+        margin-left: 10px;
+    }
+
+    .item-price {
+        margin-right: 190px;
+        white-space: nowrap; 
+        color: blue;
+    }
+
+    .item-subtotal {
+        margin-right: 5px;
+        white-space: nowrap; 
+        color: rgb(255, 0, 0);
+    }
+
+    .item-count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        flex-wrap: wrap;
+    }
+
+    .item-input {
+        text-align: center;
+        width: 50px;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+
+        width: 5ch;
+        align-items: center;
+    }
+
+    .item-actions {
+        color: #333;
+    }
+}
+
+/* ====== SECCION ORDERITEM EN MOVIL====== */
+
+@media screen and (width <=625px) {
+
+    .modal-content {
+        width: calc(100% - 3rem);
+        max-width: none;
+        padding: 0rem;
+        transform: translateY(0);
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .item-price {
+            margin-right: 190px;
+            white-space: nowrap; 
+        }
+
+        .item-imagen img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: -31px;
+        }
+
+        .item-info {
+            font-weight: 500;
+            flex: 1;
+            margin-left: 0px;
+        }
+    
+
+        .item-subtotal {
+            margin-left: -180px;
+            white-space: nowrap; 
+            color: rgb(255, 0, 0);
+            font-size: 15px;
+        }
+
+        .item-price {
+            margin-right: 190px;
+            white-space: nowrap; 
+            color: rgb(0, 17, 255);
+            font-size: 15px;
+        }
+
+        .item-count {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap; 
+            gap: 0.5rem; 
+
+            .item-input {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                width: 50px;
+                height: 30px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                font-size: 15px;
+
+                width: 5ch;
+                align-items: center;
+            }
+        }
+    }
+}

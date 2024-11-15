@@ -1,0 +1,147 @@
+.product-detail-container {
+    display: flex;
+    flex-direction: row;
+    margin: 104px 0px 0px 0px ;
+
+    height: auto;
+    border: solid 5px    black;
+}
+
+.product-content-img {
+    background-color: rgb(141, 210, 210);
+    width: 700px;
+    margin: 0;
+    padding: 10px;
+}
+
+.img {
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 50px 0px 50px 0px;
+    
+}
+
+.div-information{
+    background-color: #9bc9e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title{
+    font-size: 55px;
+}
+
+.product-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+.product-created {
+    margin-top: 20px;
+}
+
+.product-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 35px 0px 35px;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .quantity-button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .quantity-button:hover {
+    background-color: #2980B9;
+  }
+  
+  .quantity-input {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .add-to-cart-button {
+    background-color: rgb(251, 68, 68);
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  /* SECCION PRODUCT DETAIL */
+
+  @media screen and (width < 900px) {
+    .product-detail-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 120px 40px 0px 40px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .product-content-img {
+        background-color: rgb(141, 210, 210);
+        width:100%;
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+
+    .img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .product-category {
+        font-size: 12px;
+    }
+
+    .product-created {
+        font-size: 15px;
+    }
+}
